@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Basera</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link href="css/animate.css" rel="stylesheet"/>
+    <link href="css/waypoints.css" rel="stylesheet"/>
+    <script src="js/jquery.waypoints.min.js" type="text/javascript"></script>
+    <script src="js/waypoints.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+    <style>
+      
+      .spin
+      {
+			animation-name: img-spin;
+			animation-duration: 4s;
+      animation-iteration-count: infinite;
+      animation-direction: all;
+      animation-timing-function: linear;
+      }
+      
+    @keyframes img-spin
+    {
+			from{border-radius:0;}
+			to{transform: rotate(360deg);}
+		}
+      
+      .navbar 
+      {
+        margin-bottom: 0;
+        background-color:white;
+        text-align: center;
+        z-index: 9999;
+        border: 10px;
+        font-size: 12px !important;
+        line-height: 1.42857143 !important;
+        letter-spacing: 4px;
+        border-radius: 0;
+      }
+
+    .text
+    {
+      margin-left: 210px;
+    }
+    .shadow
+    {
+      text-shadow: 3px 2px gray;
+    }
+    
+    body{
+            margin: 0;
+            padding: 0;
+            font-family:  sans-serif;
+            background-image: url("images/lightblue.jpg");
+        }
+
+        .loginbox{
+            width: 320px;
+            height: 420px;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            top: 60%;
+            left: 20%;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            box-sizing: border-box;
+            padding: 70px 30px;
+        }
+
+        .loginbox2{
+            width: 320px;
+            height: 420px;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            top: 60%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            box-sizing: border-box;
+            padding: 70px 30px;
+        }
+
+        .loginbox3{
+            width: 320px;
+            height: 420px;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            top: 60%;
+            left: 80%;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            box-sizing: border-box;
+            padding: 70px 30px;
+        }
+
+        .boss{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            top: -50px;
+            left: calc(50% - 50px);
+        }
+
+        h1{
+            margin: 0;
+            padding: 0 0 20px;
+            text-align: center;
+            font-size: 22px;
+        }
+
+        .loginbox p {
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .loginbox2 p {
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .loginbox3 p {
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .loginbox input {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .loginbox2 input {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .loginbox3 input {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .loginbox input[type="text"], input[type="password"]
+        {
+            border: none;
+            border-bottom: 1px solid white;
+            background: transparent;
+            outline: none;
+            height: 40px;
+            color: white;
+            font-size: 16px;
+        }
+
+        .loginbox2 input[type="text"], input[type="password"]
+        {
+            border: none;
+            border-bottom: 1px solid white;
+            background: transparent;
+            outline: none;
+            height: 40px;
+            color: white;
+            font-size: 16px;
+        }
+
+        .loginbox3 input[type="text"], input[type="password"]
+        {
+            border: none;
+            border-bottom: 1px solid white;
+            background: transparent;
+            outline: none;
+            height: 40px;
+            color: white;
+            font-size: 16px;
+        }
+
+        .loginbox input[type="submit"]
+        {
+            border: none;
+            outline: none;
+            height: 40px;
+            background: #1c8adb;
+            color:#fff;
+            font-size: 18px;
+            border-radius: 20px;
+        }
+
+        .loginbox2 input[type="submit"]
+        {
+            border: none;
+            outline: none;
+            height: 40px;
+            background: #1c8adb;
+            color:#fff;
+            font-size: 18px;
+            border-radius: 20px;
+        }
+
+        .loginbox3 input[type="submit"]
+        {
+            border: none;
+            outline: none;
+            height: 40px;
+            background: #1c8adb;
+            color:#fff;
+            font-size: 18px;
+            border-radius: 20px;
+        }
+
+        .loginbox input[type="submit"]:hover
+        {
+            cursor: pointer;
+            color: #1c8adb;
+            background: #fff;
+            font-size: 20px;
+        }
+
+        .loginbox2 input[type="submit"]:hover
+        {
+            cursor: pointer;
+            color: #1c8adb;
+            background: #fff;
+            font-size: 20px;
+        }
+
+        .loginbox3 input[type="submit"]:hover
+        {
+            cursor: pointer;
+            color: #1c8adb;
+            background: #fff;
+            font-size: 20px;
+        }
+
+        .loginbox a{
+            text-decoration: none;
+            font-size: 16px;
+            line-height: 28px;
+            color: white;
+        }
+
+        .loginbox2 a{
+            text-decoration: none;
+            font-size: 16px;
+            line-height: 28px;
+            color: white;
+        }
+
+        .loginbox3 a{
+            text-decoration: none;
+            font-size: 16px;
+            line-height: 28px;
+            color: white;
+        }
+
+        .loginbox a:hover{
+            color: #f7981b;
+            font-size: 18px;
+        }
+
+        .loginbox2 a:hover{
+            color: #f7981b;
+            font-size: 18px;
+        }
+
+        .loginbox3 a:hover{
+            color: #f7981b;
+            font-size: 18px;
+        }
+
+</style>
+</head>
+
+<body>  
+<nav class="navbar navbar-default navbar-fixed-top">
+
+<div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <div><a class="navbar-brand"  href="#"></a></div>
+    </div>
+
+  <div class="text">
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-center">
+        <li style="padding: 20px"><a href="#login">LOGIN</a></li>
+        <li style="padding: 20px"><a href="#portfolio">PORTFOLIO</a></li>
+        <li style="padding-left:5px; padding-right:5px"><a class="spin" href="#skills">
+        <img src="images/logo.png" height="65px" width="65px"></a></li>
+        <li style="padding: 20px"><a  href="#testimonials">TESTIMONIALS</a></li>
+        <li style="padding: 20px"><a href="#contact">CONTACT US</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</nav>
+<p>hello</p>
+
+<!--<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="images/1.jpg" alt="">
+    </div>
+
+    <div class="item">
+      <img src="images/2.jpg" alt="">
+    </div>
+
+    <div class="item">
+      <img src="images/3.jpg" alt="">
+    </div>
+  </div>
+
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div> -->
+
+<div style="margin-top:50px;">
+  <div class="loginbox">
+    <img src="images/Boss-3-icon.png" class="boss">
+    <h1>Admin Login</h1>
+    <form>
+        <p>Username</p>
+        <input type="text" name="" placeholder="Enter Username">
+        <p>Password</p>
+        <input type="password" name="" placeholder="Enter Password">
+        <input type="submit" name="" value="Login">
+        <a href="#">Forgot password?</a><br>
+    </form>
+</div>
+
+<div class="loginbox2">
+  <img src="images/Man-6-icon.png" class="boss">
+  <h1>Warden Login</h1>
+  <form>
+      <p>Username</p>
+      <input type="text" name="" placeholder="Enter Username">
+      <p>Password</p>
+      <input type="password" name="" placeholder="Enter Password">
+      <input type="submit" name="" value="Login">
+      <a href="#">Forgot password?</a><br>
+  </form>
+</div>
+
+<div class="loginbox3">
+  <img src="images/Student-3-icon.png" class="boss">
+  <h1>Student Login</h1>
+  <form>
+      <p>Username</p>
+      <input type="text" name="" placeholder="Enter Username">
+      <p>Password</p>
+      <input type="password" name="" placeholder="Enter Password">
+      <input type="submit" name="" value="Login">
+      <a href="#">Forgot password?</a><br>
+      
+  </form>
+</div>
+</div>
+</div>
+</body>
+</html>

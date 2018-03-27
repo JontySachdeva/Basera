@@ -1,0 +1,18 @@
+
+.navbar {
+    margin-bottom: 0;
+    background-color:white;
+    text-align: center;
+    z-index: 9999;
+    border: 10px;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+}
+.text{
+	margin-left: 210px;
+}
+.shadow{
+	text-shadow: 3px 2px gray;
+}
